@@ -108,11 +108,12 @@ header span {
 }
 
 .navigation li.current {
-    background-color: #C2A5AC;
+    background-color: #C1A0AC;
 }
 
 .navigation a:hover {
-    background-color: #C1A0AC;
+    background-color: #B06C79;
+    color: #fff;
 }
 
 /* --------- ABOUT / PHOTO CARDS ------------ */
