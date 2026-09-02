@@ -1,16 +1,22 @@
 @media only screen and (min-width: 38rem) {
 
+    /* --------- SITE WIDE ------------ */
+   
     header, main, nav, footer {
         max-width: 900px;
         margin: 0 auto;
     }
 
+    /* --------- HEADER ------------ */
+    
     header {
         grid-template-columns: 24px auto;
     }
     .hamburger {
         display: none;
     }
+
+    /* --------- NAVIGATION ------------ */
 
     .navigation {
         display: block;
@@ -21,5 +27,46 @@
         display: flex;
     }
 
+    /* --------- MAIN ------------ */
+
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+    }
+
+    main > h1 {
+        grid-column: 1 / -1;
+    }
+
+    /* --------- ABOUT / PHOTO ------------ */
+
+    .card {
+        margin: 0;
+    }
+
+    .card > img {
+        width: 75%;
+        margin: 1rem auto;
+    }
+
+    /* --------- CERTIFICATE ------------ */
+
+    #certificate {
+        grid-column: 1 / -1;
+        margin-top: 0;
+    }
+
+    /* --------- COURSES ------------ */
+
+    #course-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* --------- FOOTER ------------ */
+
+    footer {
+        margin-top: 1rem;
+    }
   
 }

@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="styles/larger.css">
 
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/course.js" defer></script>
     <title>WDD231 | Course Homepage</title>
 </head>
 <body>
@@ -26,7 +28,41 @@
                 <li><a href="#">Final Project</a></li>
             </ul>
         </nav>
-    <main></main>
+    <main>
+        <h1>Home</h1>
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="about">
+                
+                <p>
+                    Hello! My name is Julie Jones and I am from Mesa, Arizona.
+                    I enjoy reading, writing, playing video games, crocheting, making sourdough, and
+                    computer programming. I have
+                    my Bachelor's in Computer Science and currently work as a Configuration Supervisor. 
+                    My husband and I have been married for seven years now
+                    and we
+                    just recently added to our family, our daughter named Emberly. I am excited to start
+                    teaching her all that I know. She will be one very soon and is a joy and blessing in our lives. We have our hands full, but we love it!
+                    I'm excited to continue learning Web Development. 
+                </p>
+            </div>
+        </section>
+        <section class="card">
+            <h2>Student Photo</h2>
+            <img src="images/profile.jpg" alt="Profile picture of me.">
+        </section>
+        <section id="certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+
+            <div class="course-buttons">
+                <button id="all">All Courses</button>
+                <button id="wdd">WDD Courses</button>
+                <button id="cse">CSE Courses</button>
+            </div>
+            <div id="course-list"></div>
+            <p id="credits"></p>
+        </section>
+    </main>
     <footer>
         <div class="social">
             <a href="https://github.com/jjones9825" target="_blank"><img src="images/github.svg" alt="GitHub logo" width="16" height="16"></a>
@@ -34,8 +70,8 @@
             <a href="https://www.facebook.com/julie.morris.3139/" target="_blank"><img src="images/facebook.svg" alt="Facebook logo"></a>
             <a href="https://www.instagram.com/spacefinity30/" target="_blank"><img src="images/instagram.svg" alt="Instagram logo" width="16" height="16"></a>
         </div>
-        <p>copyright symbol and current year</p>
-        <p>Last Modified</p>
+        <p>©<span id="currentyear"></span> 🌵 Julie Renee Jones 🌵 Arizona</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
 </body>
 </html>
