@@ -9,7 +9,7 @@ moonscape #B06C79
 
 /* --------- SITE WIDE ------------ */
 * {
-    font-family: "Playfair Display", serif;
+    font-family: "Playfair Display", Georgia, serif;
     box-sizing: border-box;
     color:#16131F
 }
