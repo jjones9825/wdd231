@@ -11,6 +11,7 @@ moonscape #B06C79
 * {
     font-family: "Playfair Display", serif;
     box-sizing: border-box;
+    color:#16131F
 }
 
 body {
@@ -89,7 +90,7 @@ header span {
 
 .navigation.show {
     display: block;
-    color: #4A3F4B;
+    color: #16131F;
     background-color: #F0D9E4;
 }
 
@@ -102,7 +103,7 @@ header span {
 .navigation a {
     display: block;
     padding: .8rem 10px;
-    color: #4A3F4B;
+    color: #16131F;
     text-decoration: none;
     border-bottom: solid 1px #ddd;
 }
