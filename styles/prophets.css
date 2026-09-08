@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #CBC0AA;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #2B4863;
+}
+
+h1 {
+    margin: 0.5rem 0;
+    text-align: center;
+    color: #2B4863;
+    font-family: "Sansita", sans-serif;
+    font-size: 2rem;
+}
+
+#cards {
+    width: 96%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.2rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 0.25rem;
+
+    background-color: #86909B;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+}
+
+#cards section {
+    background-color: #86909B;
+    border: 1px solid #ccc;
+
+    padding: 1rem;
+    text-align: center;
+
+    min-height: 320px;
+}
+
+#cards h2 {
+    margin: 0.2rem 0 0.5rem;
+
+    color:#2B4863;
+    font-family: "Sansita", sans-serif;
+    font-size: 1.4rem;
+}
+
+#cards p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+}
+
+#cards img {
+    display: block;
+
+    width: 150px;
+    height: 200px;
+
+    object-fit: cover;
+
+    margin: 0.6rem auto 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
+}
+
+
+@media screen and (min-width: 900px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    #cards section {
+        min-height: 315px;
+    }
+
+    #cards h2 {
+        font-size: 1.35rem;
+    }
+}

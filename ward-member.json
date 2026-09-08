@@ -1,0 +1,23 @@
+{
+    "family_name": "Jones",
+    "move_in_date": "2025-05-15",
+    "number_of_people": 3,
+    "visited_by_bishopric": true,
+    "family_members": [
+        {
+            "name": "Jacob Jones",
+            "gender": "Male",
+            "birthdate": "1994-10-20"
+        },
+        {
+            "name": "Julie Jones",
+            "gender": "Female",
+            "birthdate": "1998-03-30"
+        },
+        {
+            "name": "Emberly Jones",
+            "gender": "Female",
+            "birthdate": "2025-10-02"
+        }
+    ]
+}
