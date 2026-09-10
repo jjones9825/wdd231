@@ -1,0 +1,51 @@
+:root {
+    --primary: #9F5D4D;
+    --secondary: #6F887A;
+    --background: #EDE9E9;
+    --accent: #C0DAC1;
+    --text: #E9AE9B;
+    --font: "Bitter", sans-serif;
+}
+
+body{
+    font-family: var(--font);
+    background: var(--background);
+    font-weight: 500;
+}
+
+h1 {
+    color: var(--primary);
+}
+
+h2, h3 {
+    color: var(--secondary);
+}
+
+.primary {
+    color: var(--primary);
+}
+
+.secondary {
+    color: var(--secondary);
+}
+
+.background {
+    color: var(--text);
+}
+.accent {
+    color: var(--accent);
+}
+
+.text {
+    color: var(--text);
+}
+
+img {
+    width: 500px;
+    padding: 0.5rem;
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+}
