@@ -268,7 +268,8 @@ footer {
     border-top: 1px solid var(--primary);
     display: flex;
     padding: 1.5rem;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: flex-start;
 
 }
 
@@ -284,7 +285,7 @@ footer {
     display: flex;
     justify-content: center;
     column-gap: 8px;
-    padding: 2.5rem;
+    padding: 0;
 }
 
 .social a {
@@ -295,9 +296,11 @@ footer {
     height: 44px;
     border: #ccc solid 1px;
     border-radius: 22px;
+    flex-shrink: 0;
 }
 
 .social img {
+    display: block;
     width: 22px;
     height: 22px;
 }
