@@ -20,11 +20,15 @@
 
     .navigation {
         display: block;
-        border-bottom: solid 1px #ddd;
+        border-bottom: solid 1px var(--primary);
     }
 
     .navigation ul {
         display: flex;
+    }
+
+    .navigation a {
+        border-bottom: none;
     }
 
     /* ----------- MEMBER CARDS ---------- */

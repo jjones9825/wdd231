@@ -24,7 +24,7 @@ header {
     grid-template-columns: 24px auto 44px;
     padding: 5px 0 5px 10px;
     align-items: end;
-    border-bottom: solid 1px #ddd;
+    border-bottom: solid 1px var(--primary);
     column-gap: 8px;
 }
 
