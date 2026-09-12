@@ -3,7 +3,7 @@
     /* --------- SITE WIDE ------------ */
    
     header, main, nav, footer {
-        max-width: 900px;
+        max-width: 1200px;
         margin: 0 auto;
     }
 
@@ -36,8 +36,9 @@
     .members-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 1.25rem;
-        max-width: 1200px;
-        margin: 2rem auto;
+        width: 100%;
+        margin: 2rem 0;
+        padding: 0;
     }
 
     .member-card {
@@ -81,6 +82,10 @@
         display: none;
     } */
 
+    .member-card:last-child {
+        grid-column: 2;
+    }
+
     .members-list .member-info {
         display: contents;
     }
@@ -94,7 +99,7 @@
         font-weight: 500;
     }
 
-    .member-list .category {
+    .members-list .category {
         display: none;
     }
 
