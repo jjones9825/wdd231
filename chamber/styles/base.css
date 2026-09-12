@@ -305,3 +305,116 @@ footer {
 .social a:hover {
     background-color: var(--accent);
 }
+
+@media only screen and (min-width: 38rem) {
+
+    /* --------- SITE WIDE ------------ */
+   
+    header, main, nav, footer {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* --------- HEADER ------------ */
+    
+    header {
+        grid-template-columns: 24px auto;
+    }
+    .hamburger {
+        display: none;
+    }
+
+    /* --------- NAVIGATION ------------ */
+
+    .navigation {
+        display: block;
+        border-bottom: solid 1px var(--primary);
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation a {
+        border-bottom: none;
+    }
+
+    /* ----------- MEMBER CARDS ---------- */
+
+    .members-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.25rem;
+        width: 100%;
+        margin: 2rem 0;
+        padding: 0;
+    }
+
+    .member-card {
+        min-height: 150px;
+    }
+
+   .members-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+    margin: 1rem auto;
+    width: 100%;
+}
+
+    .members-list .member-card {
+        display: grid;
+        grid-template-columns: 1.2fr 1.4fr 1fr 2fr;
+
+        align-items: center;
+        gap: 1rem;
+
+        width: 100%;
+        min-height: 70px;
+        padding: 1rem;
+
+        border: none;
+        border-radius: 0;
+        background-color: #fff;
+    }
+
+    /* .members-list .member-card:nth-child(odd) {
+        background-color: var(--secondary);
+    }
+
+    .members-list .member-card:nth-child(even) {
+        background-color: var(--accent);
+    }
+
+    .members-list .member-card img {
+        display: none;
+    } */
+
+    .member-card:last-child {
+        grid-column: 2;
+    }
+
+    .members-list .member-info {
+        display: contents;
+    }
+
+    .members-list .member-info h2, 
+    .members-list .member-info .address,
+    .members-list .member-info .phone,
+    .members-list .member-info .website {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .members-list .category {
+        display: none;
+    }
+
+    .members-list .website {
+        color: var(--primary);
+        text-decoration: underline;
+        overflow-wrap: anywhere;
+    }
+
+}
