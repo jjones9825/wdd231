@@ -1,0 +1,103 @@
+@media only screen and (min-width: 38rem) {
+
+    /* --------- SITE WIDE ------------ */
+   
+    header, main, nav, footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    /* --------- HEADER ------------ */
+    
+    header {
+        grid-template-columns: 24px auto;
+    }
+    .hamburger {
+        display: none;
+    }
+
+    /* --------- NAVIGATION ------------ */
+
+    .navigation {
+        display: block;
+        border-bottom: solid 1px #ddd;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    /* ----------- MEMBER CARDS ---------- */
+
+    .members-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.25rem;
+        max-width: 1200px;
+        margin: 2rem auto;
+    }
+
+    .member-card {
+        min-height: 150px;
+    }
+
+   .members-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+    margin: 1rem auto;
+    width: 100%;
+}
+
+    .members-list .member-card {
+        display: gird;
+        grid-template-columns: 1.2fr 1.4fr 1fr 2fr;
+
+        align-items: center;
+        gap: 1rem;
+
+        width: 100%;
+        min-height: 70px;
+        padding: 1rem;
+
+        border: none;
+        border-radius: 0;
+        background-color: #fff;
+    }
+
+    /* .members-list .member-card:nth-child(odd) {
+        background-color: var(--secondary);
+    }
+
+    .members-list .member-card:nth-child(even) {
+        background-color: var(--accent);
+    }
+
+    .members-list .member-card img {
+        display: none;
+    } */
+
+    .members-list .member-info {
+        display: contents;
+    }
+
+    .members-list .member-info h2, 
+    .members-list .member-info .address,
+    .members-list .member-info .phone,
+    .members-list .member-info .website {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .member-list .category {
+        display: none;
+    }
+
+    .members-list .website {
+        color: var(--primary);
+        text-decoration: underline;
+        overflow-wrap: anywhere;
+    }
+
+}

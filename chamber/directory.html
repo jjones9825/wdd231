@@ -11,8 +11,9 @@
     <meta property="og:image" content="https://jjones9825.github.io/wdd231/chamber/images/cactus.svg">
     <meta property="og:url" content="https://jjones9825.github.io/wdd231/chamber/directory.html">
 
-
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link rel="icon" href="images/favicon.ico">
 
@@ -27,11 +28,49 @@
     <title>Mesa Chamber of Commerce | Directory</title>
 </head>
 <body>
-    <header></header>
-    <main></main>
+    <header>
+        <img src="images/cactus.svg" alt="Site Logo" width="512" height="512">
+        <span>City of Mesa Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger" aria-label="Open navigation menu"></button>   
+    </header>
+    <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="current"><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    <main>
+        <section class="directory-controls">
+            <button id="grid-btn" class="view-btn active" type="button" aria-label="Display as grid">Grid</button>
+
+            <button id="list-btn" class="view-btn" type="button" aria-label="Display as list">List</button>
+        </section>
+        <section id="members" class="members-grid"></section>
+    </main>
     <footer>
-        <p>©<span id="currentyear"></span> 🌵 Julie Renee Jones 🌵 Arizona</p>
-        <p>Last Modification: <span id="lastModified"></span></p>
+        <div class="business">
+            <p><strong>City of Mesa Chamber of Commerce</strong></p>
+            <p>40 N. Center St. #101 | Mesa, AZ 85201</p>
+            <p>info@mesachamber.org</p>
+            <p>(480) 969-1037</p>
+        </div>
+
+        <div class="social">
+            <a href="https://github.com/jjones9825" target="_blank"><img src="images/github.svg" alt="GitHub logo" width="16" height="16"></a>
+            <a href="https://linkedin.com/in/julie-jones-716b031a3" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn logo" width="16" height="16"></a>
+            <a href="https://www.facebook.com/julie.morris.3139/" target="_blank"><img src="images/facebook.svg" alt="Facebook logo"></a>
+            <a href="https://www.instagram.com/spacefinity30/" target="_blank"><img src="images/instagram.svg" alt="Instagram logo" width="16" height="16"></a>
+        </div>
+       
+        <div class="student">
+            <p>WDDD231 Chamber Project</p>
+            <p>Julie Jones</p>
+            <p>©<span id="currentyear"></span> 🌵 Mesa, Arizona Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+        
     </footer>
 </body>
 </html>

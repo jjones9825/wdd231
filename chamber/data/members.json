@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Mesa Business Solutions",
+        "address": "123 Main Street, Mesa, AZ 85201",
+        "phone": "(480) 555-0123",
+        "website": "https://mesabusinesssolutions.com",
+        "image": "images/business-one.webp",
+        "membership": 3,
+        "category": "Professional Services"
+    },
+    {
+        "name": "Desert Bloom Boutique",
+        "address": "456 East Main Street #101, Mesa, AZ 85202",
+        "phone": "(480) 555-0145",
+        "website": "https://desertbloom.com",
+        "image": "images/business-two.webp",
+        "membership": 2,
+        "category": "Retail"
+    },
+    {
+        "name": "Desert Bloom Coffee",
+        "address": "456 East Main Street #102, Mesa, AZ 85202",
+        "phone": "(480) 555-0142",
+        "website": "https://desertbloom.com",
+        "image": "images/business-three.webp",
+        "membership": 2,
+        "category": "Food & Beverage"
+    },
+    {
+        "name": "Copper Canyon Fitness",
+        "address": "789 East Southern Avenue, Mesa, AZ 85206",
+        "phone": "(480) 555-0187",
+        "website": "https://coppercanyonfitness.com",
+        "image": "images/business-four.webp",
+        "membership": 1,
+        "category": "Health & Fitness"
+    },
+    {
+        "name": "Sunset Ridge Landscaping",
+        "address": "102 East Broadway Road, Mesa, AZ 85210",
+        "phone": "(480) 555-0265",
+        "website": "https://sunsetridgeland.com",
+        "image": "images/business-five.webp",
+        "membership": 3,
+        "category": "Home Services"
+    },
+    {
+        "name": "South Mountain Auto Care",
+        "address": "875 East Main Street, Mesa, AZ 85203",
+        "phone": "(480) 555-0318",
+        "website": "https://smountainauto.com",
+        "image": "images/business-six.webp",
+        "membership": 3,
+        "category": "Automotive"
+    },
+    {
+        "name": "Saguaro Technology",
+        "address": "640 East University Drive, Mesa, AZ 85204",
+        "phone": "(480) 555-0524",
+        "website": "https://saguarotech.com",
+        "image": "images/business-seven.webp",
+        "membership": 2,
+        "category": "Technology"
+    }
+]
