@@ -127,6 +127,10 @@ header span {
     color: #fff;
 }
 
+/* ================
+    DISCOVER PAGE
+  ================= */
+
 /* ---------- MEMBER CARDS ---------- */
 
 .members-grid {
@@ -135,6 +139,7 @@ header span {
     gap: 1rem;
     margin: 1rem auto;
     padding: 0 1rem;
+    color: #fff;
 }
 
 .members-list {
@@ -190,7 +195,7 @@ header span {
 }
 
 .members-grid .website {
-    color: var(--primary);
+    color: #fff;
     text-decoration: underline;
 }
 
@@ -218,7 +223,7 @@ header span {
     border: 1px solid var(--primary);
     border-radius: 8px;
 
-    background-color: var(--accent);
+    background-color: var(--secondary);
 }
 
 .member-card img {
@@ -260,6 +265,216 @@ header span {
     margin-top: 0.4rem;
 }
 
+
+
+/* ================
+      HOME PAGE
+  ================= */
+
+/* ---------- MAIN ---------- */
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ---------- HERO ---------- */
+
+.hero {
+    position: relative;
+    margin: 1rem auto 2rem;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem;
+    background: var(--accent);
+    color: var(--primary);
+}
+
+.hero-content h2 {
+    margin: 0 0 0.5rem;
+}
+
+.hero-content p {
+    margin: 0 0 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    background-color: var(--background);
+    color: var(--text);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover,
+.cta-button:focus {
+    background-color: var(--secondary);
+    color: #fff;
+}
+
+/* ---------- SECTION HEADINGS ---------- */
+
+.events,
+.weather,
+.spotlights {
+    margin: 2rem 1rem;
+}
+
+.events h2,
+.weather h2,
+.spotlights h2 {
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--secondary);
+}
+
+/* ---------- EVENTS ---------- */
+
+#event-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.event-card {
+    padding: 1.25rem;
+    background-color: #fff;
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.event-card h3 {
+    margin-top: 0;
+    color: var(--primary);
+}
+
+.event-card p {
+    margin: 0.5rem 0;
+}
+
+.event-card strong {
+    color: var(--text);
+}
+
+/* ---------- WEATHER ---------- */
+
+.weather {
+    padding: 1.25rem;
+    background-color: var(--background);
+    border-radius: 8px;
+}
+
+#current-weather {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid var(--accent);
+}
+
+#current-weather h3,
+#forecast h3 {
+    color: var(--primary);
+}
+
+#current-weather p {
+    margin: 0.5rem 0;
+}
+
+#forecast-cont {
+    display: gird;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.forecast-card {
+    padding: 1rem;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+}
+
+.forecast-card h4 {
+    margin-top: 0;
+    color: var(--primary);
+}
+
+.forecast-temperature {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--secondary);
+    margin: 0.5rem 0;
+}
+
+.forecast-card p:last-child {
+    text-transform: capitalize;
+}
+
+/* ---------- MEMBER SPOTLIGHTS ---------- */
+
+#spotlight-cont {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.spotlight-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem;
+    background-color: #fff;
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.spotlight-card img {
+    display: block;
+    width: 100%;
+    max-width: 180px;
+    height: 120px;
+    object-fit: contain;
+    margin: 0 auto 1rem;
+}
+
+.spotlight-content {
+    flex: 1;
+}
+
+.spotlight-content h3 {
+    margin-top: 0;
+    color: var(--primary);
+}
+
+.spotlight-content p {
+    margin: 0.5rem 0;
+}
+
+.spotlight-content strong {
+    color: var(--text);
+}
+
+.spotlight-content a {
+    color: var(--secondary);
+    font-weight: bold;
+}
 
 /* ---------- FOOTER ---------- */
 
@@ -308,6 +523,8 @@ footer {
 .social a:hover {
     background-color: var(--accent);
 }
+
+/* ---------- DESKTOP VIEW ---------- */
 
 @media only screen and (min-width: 38rem) {
 
@@ -419,5 +636,42 @@ footer {
         text-decoration: underline;
         overflow-wrap: anywhere;
     }
+
+    /* EVENTS */
+    #event-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* WEATHER */
+
+    .weather {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 1.5rem;
+        align-items: start;
+    }
+
+    .weather h2 {
+        grid-column: 1 / -1;
+    }
+
+    #current-weather {
+        margin-bottom: 0;
+    }
+
+    #forecast-cont {
+        grid-template-columns:  repeat(3, 1fr);
+    }
+
+    /* SPOTLIGHTS */
+
+    #spotlight-cont {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .spotlight-card {
+        min-height: 100%;
+    }
+
 
 }

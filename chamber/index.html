@@ -9,7 +9,7 @@
     <meta property="og:title" content="Mesa Chamber of Commerce Home">
     <meta property="og:description" content="Explore the local businesses and Chamber of Commerce members in Mesa, Arizona.">
     <meta property="og:image" content="https://jjones9825.github.io/wdd231/chamber/images/cactus.svg">
-    <meta property="og:url" content="https://jjones9825.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://jjones9825.github.io/wdd231/chamber/">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,6 +22,7 @@
 
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/home.js" defer></script>
     
     <title>Mesa Chamber of Commerce | Home</title>
 </head>
@@ -41,6 +42,48 @@
         </nav>
     <main>
         <h1>Home</h1>
+
+        <section class="hero">
+            <img src="images/mesa-arizona-hero.webp" alt="City of Mesa, Arizona with the city in the distant background.">
+
+            <div class="hero-content">
+                <h2>Grow Your Business in Mesa</h2>
+                <p>Connect with local businesses and discover opportunities.</p>
+
+                <a class="cta-button" href="#">Join the Chamber</a>
+            </div>
+        </section>
+
+        <section class="events">
+            <h2>Current Events</h2>
+            <div id="event-list">
+            </div>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+
+            <div id="current-weather">
+                <h3>Current Weather</h3>
+                <p>
+                    Temperature: 
+                    <span id="current-temp"></span>
+                </p>
+                <p>
+                    Conditions:
+                    <span id="weather-desc"></span>
+                </p>
+            </div>
+            <div id="forecast">
+                <h3>3-Day Forecast</h3>
+                <div id="forecast-cont"></div>
+            </div>
+        </section>
+        <section class="spotlights">
+            <h2>Member Spotlights</h2>
+
+            <div id="spotlight-cont"></div>
+        </section>
     </main>
     <footer>
         <div class="business">

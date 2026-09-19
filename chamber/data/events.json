@@ -1,0 +1,33 @@
+[
+    {
+        "name": "Business Networking Mixer",
+        "date": "2026-09-18",
+        "time": "5:30 PM - 7:00 PM",
+        "location": "Mesa Chamber of Commerce",
+        "description": "Meet local business owners and community leaders while building valuable connections."
+    },
+
+    {
+        "name": "Mesa Small Business Workshop",
+        "date": "2026-10-02",
+        "time": "10:00 AM - 12:00 PM",
+        "location": "Mesa Convention Center",
+        "description": "Learn strategies and resources design to help local businesses grow."
+    },
+
+    {
+        "name": "Downtown Mesa Business Breakfast",
+        "date": "2026-10-20",
+        "time": "8:00 AM - 9:30 AM",
+        "location": "Mesa Community Center",
+        "description": "Start your morning by connecting with fellow Mesa business professionals."
+    },
+
+    {
+        "name": "Chamber Business Expo",
+        "date": "2026-11-11",
+        "time": "9:30 AM - 3:00 PM",
+        "location": "Mesa Convention Center",
+        "description": "Discover local businesses, services, and resources at this community business expo."
+    }
+]
