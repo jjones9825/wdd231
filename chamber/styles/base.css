@@ -299,8 +299,8 @@ main {
     left: 0;
     width: 100%;
     padding: 1.5rem;
-    background: var(--accent);
-    color: var(--primary);
+    background: var(--secondary);
+    color: var(--background);
 }
 
 .hero-content h2 {
@@ -398,7 +398,7 @@ main {
 }
 
 #forecast-cont {
-    display: gird;
+    display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
 }
