@@ -299,7 +299,7 @@ main {
     left: 0;
     width: 100%;
     padding: 1.5rem;
-    background: var(--secondary);
+    background: var(--primary);
     color: var(--background);
 }
 
