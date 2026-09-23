@@ -200,6 +200,29 @@ header span {
     margin: 0.5rem 0;
 }
 
+/* ---------- MODAL ---------- */
+
+dialog {
+    border: 1px solid #4A3F4B;
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-sizing: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+}
+
+::backdrop {
+    background-color: #C1A0AC;
+}
+
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid #16131F;
+}
 /* --------- FOOTER ------------ */
 
 footer {

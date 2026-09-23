@@ -30,7 +30,7 @@ const courses = [
         title: 'Programming with Functions',
         credits: 2,
         certificate: 'Web and Computer Programming',
-        description: 'CSE 111 students become more organized, efficient, and powerful computer programmers by learning to research and call functions written by others; to write, call , debug, and test their own functions; and to handle errors within functions. CSE 111 students write programs with functions to solve problems in many disciplines, including business, physical science, human performance, and humanities.',
+        description: 'CSE 111 students become more organized, efficient, and powerful computer programmers by learning to research and call functions written by others; to write, call, debug, and test their own functions; and to handle errors within functions. CSE 111 students write programs with functions to solve problems in many disciplines, including business, physical science, human performance, and humanities.',
         technology: [
             'Python'
         ],
@@ -79,11 +79,15 @@ const courses = [
 ];
 
 const courseList = document.querySelector('#course-list');
+const courseDetails = document.querySelector('#course-details');
+
 
 function displayCourses(courseArray) {
+
     courseList.innerHTML = "";
 
     courseArray.forEach(course => {
+
         const courseCard = document.createElement('div');
 
         courseCard.classList.add('course');
@@ -98,6 +102,10 @@ function displayCourses(courseArray) {
             </span>
         `;
 
+        courseCard.addEventListener('click', () => {
+            displayCourseDetails(course);
+        });
+
         courseList.appendChild(courseCard);
     });
 
@@ -105,19 +113,57 @@ function displayCourses(courseArray) {
         return total + course.credits;
     }, 0);
 
-    document.querySelector('#credits').textContent = `The total number of credits for the courses listed is ${totalCredits}`;
+    document.querySelector('#credits').textContent =
+        `The total number of credits for the courses listed is ${totalCredits}`;
 }
+
 
 document.querySelector("#all").addEventListener("click", () => {
     displayCourses(courses);
 });
 
+
 document.querySelector("#wdd").addEventListener("click", () => {
+
     const wddCourses = courses.filter(course => course.subject === "WDD");
+
     displayCourses(wddCourses);
 });
 
+
 document.querySelector("#cse").addEventListener("click", () => {
+
     const cseCourses = courses.filter(course => course.subject === "CSE");
+
     displayCourses(cseCourses);
 });
+
+
+function displayCourseDetails(course) {
+
+    courseDetails.innerHTML = `
+        <button id="closeModal">X</button>
+
+        <h2>${course.subject} ${course.number}</h2>
+
+        <h3>${course.title}</h3>
+
+        <p><strong>Credits:</strong> ${course.credits}</p>
+
+        <p><strong>Certificate:</strong> ${course.certificate}</p>
+
+        <p>${course.description}</p>
+
+        <p><strong>Technologies:</strong> ${course.technology.join(', ')}</p>
+    `;
+
+    courseDetails.showModal();
+
+    document.querySelector('#closeModal').addEventListener('click', () => {
+        courseDetails.close();
+    });
+}
+
+
+// Display all courses when the page loads
+displayCourses(courses);
