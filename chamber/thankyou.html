@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is my WDD231 Chamber of Commerce Project Join Page.">
+    <meta name="author" content="Julie Jones">
+    
+    <meta property="og:title" content="Mesa Chamber of Commerce Thank You">
+    <meta property="og:description" content="Thank you for joining the Chamber of Commerce in Mesa, Arizona.">
+    <meta property="og:image" content="https://jjones9825.github.io/wdd231/chamber/images/cactus.svg">
+    <meta property="og:url" content="https://jjones9825.github.io/wdd231/chamber/thankyou.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+    
+    <title>Mesa Chamber of Commerce | Thank You</title>
+</head>
+<body>
+    <header>
+        <img src="images/cactus.svg" alt="Site Logo" width="50" height="50">
+        <span>City of Mesa Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger" aria-label="Open navigation menu"></button>   
+    </header>
+    <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li class="current"><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    <main class="thankyou-page">
+        
+        <section class="thankyou-message">
+            
+            <h1>Thank You for Joining!</h1>
+
+            <p>Thank you for submitting your membership application to the Mesa Chamber of Commerce.</p>
+            <p>We appreciate your interest in becoming part of our business community.</p>
+        
+        </section>
+
+        <section class="application-summary">
+            <h2>Application Information</h2>
+
+            <div class="submitted-info">
+                <p>
+                    <strong>First Name:</strong>
+                    <span id="display-first-name"></span>
+                </p>
+
+                <p>
+                    <strong>Last Name:</strong>
+                    <span id="display-last-name"></span>
+                </p>
+
+                <p>
+                    <strong>Email:</strong>
+                    <span id="display-email"></span>
+                </p>
+                <p>
+                    <strong>Mobile Phone:</strong>
+                    <span id="display-phone"></span>
+                </p>
+                <p>
+                    <strong>Business / Organization:</strong>
+                    <span id="display-organization"></span>
+                </p>
+                <p>
+                    <strong>Application Submitted:</strong>
+                    <span id="display-timestamp"></span>
+                </p>
+            </div>
+        </section>
+        
+        <a class="return-button" href="index.html">Return to Home</a>
+       
+    </main>
+    <footer>
+        <div class="business">
+            <p><strong>City of Mesa Chamber of Commerce</strong></p>
+            <p>40 N. Center St. #101 | Mesa, AZ 85201</p>
+            <p>info@mesachamber.org</p>
+            <p>(480) 969-1037</p>
+        </div>
+
+        <div class="social">
+            <a href="https://github.com/jjones9825" target="_blank"><img src="images/github.svg" alt="GitHub logo" width="16" height="16"></a>
+            <a href="https://linkedin.com/in/julie-jones-716b031a3" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn logo" width="16" height="16"></a>
+            <a href="https://www.facebook.com/julie.morris.3139/" target="_blank"><img src="images/facebook.svg" alt="Facebook logo" width="16" height="16"></a>
+            <a href="https://www.instagram.com/spacefinity30/" target="_blank"><img src="images/instagram.svg" alt="Instagram logo" width="16" height="16"></a>
+        </div>
+       
+        <div class="student">
+            <p>WDDD231 Chamber Project</p>
+            <p>Julie Jones</p>
+            <p>©<span id="currentyear"></span> 🌵 Mesa, Arizona Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+        
+    </footer>
+</body>
+</html>

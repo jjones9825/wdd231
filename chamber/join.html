@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is my WDD231 Chamber of Commerce Project Home Page.">
+    <meta name="description" content="This is my WDD231 Chamber of Commerce Project Join Page.">
     <meta name="author" content="Julie Jones">
     
-    <meta property="og:title" content="Mesa Chamber of Commerce Home">
-    <meta property="og:description" content="Explore the local businesses and Chamber of Commerce members in Mesa, Arizona.">
+    <meta property="og:title" content="Mesa Chamber of Commerce Join Us">
+    <meta property="og:description" content="Join the Chamber of Commerce in Mesa, Arizona.">
     <meta property="og:image" content="https://jjones9825.github.io/wdd231/chamber/images/cactus.svg">
-    <meta property="og:url" content="https://jjones9825.github.io/wdd231/chamber/">
+    <meta property="og:url" content="https://jjones9825.github.io/wdd231/chamber/join.html">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,9 +22,9 @@
 
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/home.js" defer></script>
+    <script src="scripts/join.js" defer></script>
     
-    <title>Mesa Chamber of Commerce | Home</title>
+    <title>Mesa Chamber of Commerce | Join Us</title>
 </head>
 <body>
     <header>
@@ -41,9 +41,156 @@
             </ul>
         </nav>
     <main>
-        <h1>Join</h1>
+        <h1>Join the Mesa Chamber of Commerce</h1>
 
+        <div class="join-layout">
+            <section class="membership-form">
+                <h2>Membership Application</h2>
+
+                <form method="get" action="thankyou.html">
+                    <label for="first-name">
+                        First Name*
+                        <input type="text" id="first-name" name="first-name" title="Enter your first name" autocomplete="given-name" required>
+                    </label>
+                    <label for="last-name">
+                        Last Name*
+                        <input type="text" id="last-name" name="last-name" title="Enter your last name" autocomplete="family-name" required>
+                    </label>
+                    <label for="org-title">
+                        Organizational Title
+                        <input type="text" id="org-title" name="org-title" title="Enter your organizational title" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}">
+                    </label>
+                    <label for="email">
+                        Email Address* 
+                        <input type="email" id="email" name="email" title="Enter your email address" autocomplete="email" placeholder="example@email.com" required>
+                    </label>
+                    <label for="phone">
+                        Phone Number*
+                        <input type="tel" id="phone" name="phone" title="Enter your phone number" autocomplete="tel" required>
+                    </label>
+                    <label for="organization">
+                        Business / Organization Name*
+                        <input type="text" id="organization" name="organization" title="Enter your business or organization name" autocomplete="organization" required>
+                    </label>
+
+                    <fieldset>
+                        <legend>Membership Level</legend>
+
+                        <label>
+                            <input type="radio" name="membership" value="np" required>
+                            NP Membership
+                        </label>
+                        <label>
+                            <input type="radio" name="membership" value="bronze">
+                            Bronze Membership
+                        </label>
+                        <label>
+                        <input type="radio" name="membership" value="silver">
+                            Silver Membership
+                        </label>
+                        <label>
+                        <input type="radio" name="membership" value="gold">
+                            Gold Membership
+                        </label>
+                    </fieldset>
+
+                    <label for="description">
+                        Business / Organization Description
+                        <textarea id="description" name="description" title="Describe your business or organization" rows="6"></textarea>
+                    </label>
+
+                    <input type="hidden" id="timestamp" name="timestamp">
+
+                    <input type="submit" value="Submit Application">
+
+                </form>
+            </section>
+
+            <section class="membership-levels">
+                <h2>Membership Levels</h2>
+
+                <article class="membership-card np-card">
+                    <h3>NP Membership</h3>
+                    <p>For nonprofit organizations.</p>
+                    <button type="button" class="modal-link" data-modal="np-modal">
+                        Learn More
+                    </button>
+                </article>
+                <article class="membership-card bronze-card">
+                    <h3>Bronze Membership</h3>
+                    <p>Essential benefits for growing businesses.</p>
+                    <button type="button" class="modal-link" data-modal="bronze-modal">
+                        Learn More
+                    </button>
+                </article>
+                <article class="membership-card silver-card">
+                    <h3>Silver Membership</h3>
+                    <p>Expanded marketing and networking benefits.</p>
+                    <button type="button" class="modal-link" data-modal="silver-modal">
+                        Learn More
+                    </button>
+                </article>
+                <article class="membership-card gold-card">
+                    <h3>Gold Membership</h3>
+                    <p>Premium benefits and increased visibility.</p>
+                    <button type="button" class="modal-link" data-modal="gold-modal">
+                        Learn More
+                    </button>
+                </article>
+            </section>
+        </div>
         
+        <dialog id="np-modal">
+            <h2>NP Membership</h2>
+            <p>No membership fee for qualifying nonprofit organizations.</p>
+            <ul>
+                <li>Chamber networking opportunities</li>
+                <li>Access to community events</li>
+                <li>Business training resources</li>
+                <li>Nonprofit networking opportunities</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="bronze-modal">
+            <h2>Bronze Membership</h2>
+            <p>Affordable membership benefits for small and growing businesses.</p>
+            <ul>
+                <li>Networking oppportunities</li>
+                <li>Business training</li>
+                <li>Member directory listing</li>
+                <li>Discounted event registration</li>
+            </ul>
+
+            <button class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="silver-modal">
+            <h2>Silver Membership</h2>
+            <p>Additional promotional and networking opportunities.</p>
+            <ul>
+                <li>All Bronze benefits</li>
+                <li>Additional event discounts</li>
+                <li>Business spotlight opportunities</li>
+                <li>Priority networking opportunities</li>
+                <li>Additional training opportunities</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="gold-modal">
+            <h2>Gold Membership</h2>
+            <p>Premuim visibility and promotional opportunities.</p>
+            <ul>
+                <li>All Silver benefits</li>
+                <li>Premium business spotlight</li>
+                <li>Featured advertising opportunities</li>
+                <li>VIP networking events</li>
+                <li>Premium event discounts</li>
+                <li>Priority promotional opportunities</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </dialog>
     </main>
     <footer>
         <div class="business">
