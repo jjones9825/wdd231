@@ -480,6 +480,39 @@ main {
       JOIN PAGE
   ================= */
 
+/* ---------- JOIN LAYOUT ---------- */
+
+.join h1 {
+    max-width: 1200px;
+    margin: 2rem auto 1rem;
+    padding: 0 1.5rem;
+}
+
+.join-layout {
+    max-width: 1200px;
+    margin: 0 auto 4rem;
+    padding: 1.5rem;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    padding: 1rem;
+}
+
+.membership-form,
+.membership-levels {
+    width: 100%;
+}
+
+.membership-levels {
+    order: 2;
+}
+
+.membership-form {
+    order: 1;
+}
+
 /* ---------- MEMBERSHIP LEVEL CARDS ---------- */
 
 .membership-card {
@@ -750,24 +783,6 @@ dialog li {
 .close-modal:hover,
 .close-modal:focus {
     background-color: var(--secondary);
-}
-/* ---------- JOIN LAYOUT ---------- */
-
-.join h1 {
-    margin-left: 1.5rem;
-}
-.join-layout {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 1.5rem;
-}
-
-.membership-levels {
-    order: 2;
-}
-
-.membership-form {
-    order: 1;
 }
 
 /* ---------- THANK YOU PAGE ---------- */
