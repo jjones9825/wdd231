@@ -516,6 +516,15 @@ main {
 /* ---------- MEMBERSHIP LEVEL CARDS ---------- */
 
 .membership-card {
+    padding: 1.5rem;
+    background-color: #fff;
+
+    border: 1px solid var(--accent);
+    border-left: 6px solid var(--secondary);
+
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    
     opacity: 0;
     transform: translateY(30px);
     animation: membershipEntry 0.8s ease forwards;
@@ -674,17 +683,6 @@ main {
 
 .membership-levels h2 {
     margin-bottom: 0.5rem;
-}
-
-.membership-card {
-    padding: 1.5rem;
-    background-color: #fff;
-
-    border: 1px solid var(--accent);
-    border-left: 6px solid var(--secondary);
-
-    border-radius: 8px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.8);
 }
 
 .membership-card h3 {
