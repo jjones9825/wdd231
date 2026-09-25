@@ -772,6 +772,7 @@ dialog li {
 .join-layout {
     display: grid;
     grid-template-columns: 1fr;
+    padding: 1rem;
 }
 
 .membership-levels {
