@@ -769,10 +769,13 @@ dialog li {
 }
 /* ---------- JOIN LAYOUT ---------- */
 
+.join h1 {
+    margin-left: 1.5rem;
+}
 .join-layout {
     display: grid;
     grid-template-columns: 1fr;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 .membership-levels {
