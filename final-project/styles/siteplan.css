@@ -1,0 +1,47 @@
+:root {
+    --primary: #332B28;
+    --secondary: #675A54;
+    --background: #F7F2EA;
+    --interactive: #B98282;
+    --secondary-accent: #7C8870;
+    --cards: #FFFFFF;
+    --highlight: #C29A5A;
+    --body-font: "Open Sans", sans-serif;
+    --heading-font: "Playfair Display", serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: .5rem;
+}
+
+body {
+    background: var(--background);
+    color: var(--secondary);
+    font-family: var(--body-font);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--primary);
+    font-family: var(--heading-font);
+}
+
+.primary {
+    color: var(--primary);
+}
+
+.interactive {
+    color: var(--interactive);
+}
+
+.accent {
+    color: var(--secondary-accent);
+}
+
+.highlight {
+    color: var(--highlight);
+}
+
