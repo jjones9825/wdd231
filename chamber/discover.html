@@ -6,8 +6,8 @@
     <meta name="description" content="This is my WDD231 Chamber of Commerce Project Discover Page.">
     <meta name="author" content="Julie Jones">
     
-    <meta property="og:title" content="Mesa Chamber of Commerce Discover Us Page - Fill out an application and check out our different membership levels">
-    <meta property="og:description" content="Join the Chamber of Commerce in Mesa, Arizona. Fill out an application and check out the different memberships we offer.">
+    <meta property="og:title" content="Mesa Chamber of Commerce Discover Mesa Page">
+    <meta property="og:description" content="Discover Mesa via the Chamber of Commerce. Explore attractions, history, recreation, arts, and culture.">
     <meta property="og:image" content="https://jjones9825.github.io/wdd231/chamber/images/cactus.svg">
     <meta property="og:url" content="https://jjones9825.github.io/wdd231/chamber/discover.html">
 
@@ -19,12 +19,13 @@
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/discover.css">
 
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/discover.js" defer></script>
+    <script type="module" src="scripts/discover.js" defer></script>
     
-    <title>Mesa Chamber of Commerce | Join Us</title>
+    <title>Mesa Chamber of Commerce | Discover Mesa</title>
 </head>
 <body>
     <header>
@@ -41,9 +42,18 @@
             </ul>
         </nav>
     <main>
-        <h1>Discover</h1>
+        <section class="discover-intro">
+            <h1>Discover Mesa</h1>
 
+            <p>Explore the places, people, history, recreation, arts, and culture that make Mesa a vibrant community to visit, live, and do business.</p>
         
+        </section>
+        <section class="visitor-message" aria-live="polite">
+            <p id="visit-message"></p>
+        </section>
+        <section class="discover-grid" id="discover-grid">
+
+        </section>
     </main>
     <footer>
         <div class="business">

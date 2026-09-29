@@ -1,0 +1,285 @@
+/* ---------- UNIVERSAL ---------- */
+:root {
+    --primary: #4E3742;
+    --secondary: #926868;
+    --background: #EBDFDC;
+    --accent: #BB989A;
+    --text: #753E3D;
+    --font: "Bitter", sans-serif;
+}
+
+
+
+/* ---------- DISCOVER INFO ---------- */
+
+.discover-intro {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1rem 1rem;
+    text-align: center;
+}
+
+.discover-intro h1 {
+    color: var(--primary);
+    margin-bottom: 0.75rem;
+}
+
+.discover-intro p {
+    max-width: 750px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* ---------- VISITOR MESSAGE ---------- */
+
+.visitor-message {
+    max-width: 1100px;
+    margin: 1rem auto 2rem;
+    padding: 1rem;
+}
+
+.visitor-message p {
+    margin: 0;
+    padding: 1rem 1.25rem;
+    background-color: var(--accent);
+    color: var(--primary);
+    border-left: 6px solid var(--secondary);
+    border-radius: 0.35rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* ---------- DISCOVER GRID ---------- */
+
+.discover-grid {
+    width: min(1100px, 92%);
+    margin: 0 auto 3rem;
+
+    display: grid;
+    gap: 1.5rem;
+
+    grid-template-columns: 1fr;
+
+    grid-template-areas: 
+        "one"
+        "two"
+        "three"
+        "four"
+        "five"
+        "six"
+        "seven"
+        "eight"
+    ;
+}
+
+/* ---------- GRID AREA ASSIGNMENTS ---------- */
+
+.area-1 {
+    grid-area: one;
+}
+
+.area-2 {
+    grid-area: two;
+}
+
+.area-3 {
+    grid-area: three;
+}
+
+.area-4 {
+    grid-area: four;
+}
+
+.area-5 {
+    grid-area: five;
+}
+
+.area-6 {
+    grid-area: six;
+}
+
+.area-7 {
+    grid-area: seven;
+}
+
+.area-8 {
+    grid-area: eight;
+}
+
+/* ---------- DISCOVER CARD ---------- */
+
+.discover-card {
+    display: grid;
+
+    grid-template-rows: auto auto auto 1fr auto;
+    background-color: #ffffff;
+    border: 1px solid var(--accent);
+    overflow: hidden;
+
+    box-shadow: 0 3px 8px rgba(78, 55, 66, 0.12);
+    padding-bottom: 1rem;
+}
+
+/* ---------- CARD TITLE ---------- */
+
+.discover-card h2 {
+    margin: 0;
+    padding: 1rem;
+
+    background-color: var(--primary);
+    color: #ffffff;
+
+    font-size: 1.25rem;
+    line-height: 1.3;
+}
+
+/* ---------- CARD IMAGE ---------- */
+
+.discover-card figure {
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--background);
+    overflow: hidden;
+}
+
+.discover-card img {
+    display: block;
+    
+    width: 100%;
+    height: auto;
+
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* ---------- ADDRESS ---------- */
+
+.discover-card address {
+    padding: 1rem 1rem 0;
+    color: var(--text);
+
+    font-style: normal;
+    font-weight: 600;
+
+    line-height: 1.5;
+}
+
+/* ---------- DESCRIPTION ---------- */
+
+.discover-card p {
+    padding: 0 1rem;
+    line-height: 1.65;
+
+    color: var(--text);
+}
+
+/* ---------- BUTTON ---------- */
+
+.learn-more {
+    justify-self: start;
+
+    margin: 0 1rem;
+
+    padding: 0.7rem 1.1rem;
+
+    border: 2px solid var(--primary);
+    border-radius: 0.3rem;
+
+    background-color: var(--secondary);
+    color: #ffffff;
+
+    font-family: var(--font);
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.learn-more:hover,
+.learn-more:focus {
+    background-color: var(--primary);
+    color: #ffffff;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+    .discover-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        grid-template-areas: 
+            "one   one"
+            "two   three"
+            "four  five"
+            "six   six"
+            "seven eight"
+        ;
+
+     
+    }
+
+        .area-1 img,
+        .area-6 img {
+            max-height: 260px;
+            object-fit: cover;
+        }
+}
+
+@media screen and (min-width: 1025px) {
+    .discover-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+
+        grid-template-areas: 
+            "one   one   two   two"
+            "three four  four  five"
+            "three six   six   seven"
+            "eight six   six   seven"
+        ;
+    }
+
+    .area-1 h2,
+    .area-6 h2 {
+        font-size: 1.4rem;
+    }
+
+    .area-1 img,
+    .area-6 img {
+        height: 260px;
+        object-fit: cover;
+    }
+
+    .discover-card figure:hover img {
+        transform: scale(1.05);
+        filter: brightness(0.9);
+    }
+
+    .discover-card {
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .discover-card:hover {
+        transform: translateY(-4px);
+
+        box-shadow: 0 8px 18px rgba(78, 55, 66, 0.2);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .discover-grid {
+        width: min(1200px, 92%);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .discover-card figure:hover img {
+        transform: none;
+        filter: none;
+    }
+
+    .discover-card:hover {
+        transform: none;
+        box-shadow: 0 3px 8px rgba(78, 55, 66, 0.12);
+    }
+}
