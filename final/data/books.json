@@ -8,7 +8,7 @@
         "pages": 464,
         "rating": 4.8,
         "description": "Coast Guard vet Carl and his ex-girlfriend's cat Princess Donut, survive an alien invasion by navigating a deadly fantasy dungeon that's actually a sadistic intergalactic reality show.",
-        "cover": "images/"
+        "cover": "images/dungeon-crawler-carl.webp"
     },
 
     {
@@ -20,7 +20,7 @@
         "pages": 400,
         "rating": 4.5,
         "description": "A college student tutors the hockey team captain to make another guy jealous, but ends up falling for him instead.",
-        "cover": "images/"
+        "cover": "images/the-deal.webp"
     },
 
     {
@@ -32,7 +32,7 @@
         "pages": 528,
         "rating": 4.6,
         "description": "A princess defies her destined role when she seals an ancient treaty with blood and embarks on a perilous journey with a hostile warrior.",
-        "cover": "images/"
+        "cover": "images/shield-of-sparrows.webp"
     },
 
     {
@@ -44,7 +44,7 @@
         "pages": 192,
         "rating": 4.6,
         "description": "This book teaches how to overcome anxiety, self-doubt, and suffering by understanding the root cause and accessing inner peace and unconditional love.",
-        "cover": "images/"
+        "cover": "images/everything-you-think.webp"
     },
 
     {
@@ -56,7 +56,7 @@
         "pages": 312,
         "rating": 4.2,
         "description": "A deputy investigates his brother's suspicious death in Italy, uncovering deadly secrets amid ancient alleys with a distrustful local agent.",
-        "cover": "images/"
+        "cover": "images/foreign-deceit.webp"
     },
 
     {
@@ -68,7 +68,7 @@
         "pages": 372,
         "rating": 4.2,
         "description": "Treasure hunter Detach and his crew search for sunken riches in the Lusitania wreck, facing dangerous secrets and mysterious threats lurking in the Atlantic depths.",
-        "cover": "images/"
+        "cover": "images/lusitania-gold.webp"
     },
 
     {
@@ -80,7 +80,7 @@
         "pages": 336,
         "rating": 4.6,
         "description": "In 1944, American airmen shot down over Nazi-occupied Yugoslavia were rescued through Operation Halyard, where Serbian villagers helped build a secret landing string for their evacuation.",
-        "cover": "images/"
+        "cover": "images/forgotten.webp"
     },
 
     {
@@ -92,7 +92,7 @@
         "pages": 497,
         "rating": 4.7,
         "description": "An amnesiac astronaut awakens millions of miles from Earth with two dead crewmates. As memories return, he must solve a scientific mystery to save humanity from extinction.",
-        "cover": "images/"
+        "cover": "images/project-hail-mary.webp"
     },
 
     {
@@ -104,7 +104,7 @@
         "pages": 368,
         "rating": 4.4,
         "description": "This story follows a physics professor who wakes up in an alternate universe where his life is completely different. To reclaim his family, he must navigate infinite realities while facing his greatest enemy--himself.",
-        "cover": "images/"
+        "cover": "images/dark-matter.webp"
     },
 
     {
@@ -116,7 +116,7 @@
         "pages": 208,
         "rating": 4.7,
         "description": "A thrilling prehistoric adventure where two young heroes embark on a dangerous quest to rescue their kidnapped friend, only to spark a deadly conflict threatening their entire village.",
-        "cover": "images/"
+        "cover": "images/ghost-warriors.webp"
     },
 
     {
@@ -128,7 +128,7 @@
         "pages": 319,
         "rating": 5.0,
         "description": "A team of emotionally broken moutaineers attempts to conquer Danvedi Garwal, the galazy's deadliest forbidden summit, facing deadly predators, rival climbers, and a universe-altering secret.",
-        "cover": "images/"
+        "cover": "images/forbidden-summit.webp"
     },
 
     {
@@ -140,7 +140,7 @@
         "pages": 768,
         "rating": 4.8,
         "description": "C.S. Lewis's complete seven-book series follows children who become heroes in Narnia, a fantastical realm where they battle evil, encounter mythical creatures, and discover profound moral truths.",
-        "cover": "images/"
+        "cover": "images/narnia.webp"
     },
 
     {
@@ -152,7 +152,7 @@
         "pages": 448,
         "rating": 4.6,
         "description": "A gripping account of a Marine company's harrowing battle for survival against overwhelming North Vietnamese forces in the jungles of Vietnam.",
-        "cover": "images/"
+        "cover": "images/lions-of-medina.webp"
     },
 
     {
@@ -164,7 +164,7 @@
         "pages": 256,
         "rating": 4.7,
         "description": "This book is about how to escape negative thinking patterns and take control of your thoughts, emotions, and circumstances by submitting your mind to Christ.",
-        "cover": "images/"
+        "cover": "images/out-of-your-head.webp"
     },
 
     {
@@ -176,7 +176,7 @@
         "pages": 401,
         "rating": 4.5,
         "description": "A fake relationship between scientists meets the irresistible force of attraction, throwing one woman;s carefully calculated theories on love into chaos.",
-        "cover": "images/"
+        "cover": "images/love-hypothesis.webp"
     },
 
     {
@@ -188,7 +188,7 @@
         "pages": 465,
         "rating": 4.5,
         "description": "A young outcast bastard son secretly trained as an assassin must use his magical abilities to protect his kingdom from raiders.",
-        "cover": "images/"
+        "cover": "images/assassins-apprentice.webp"
     },
 
     {
@@ -200,19 +200,19 @@
         "pages": 672,
         "rating": 4.7,
         "description": "The story of a hero told in his own voice, a tale of sorrow, survival, and one man's search for meaning in his universe, and how that search gave birth to a legend.",
-        "cover": "images/"
+        "cover": "images/name-of-the-wind.webp"
     },
 
     {
         "id": 18,
-        "title": "The Wheel of Time",
+        "title": "The Eye of the World",
         "author": "Robert Jordan",
         "genre": "Adventure",
         "year": 1990,
         "pages": 784,
         "rating": 4.6,
         "description": "A young man and his friends are swept into an epic fantasy adventure, pursued by dark forces seeking an ancient prophecy's fulfillment.",
-        "cover": "images/"
+        "cover": "images/eye-of-the-world.webp"
     },
 
     {
@@ -224,7 +224,7 @@
         "pages": 242,
         "rating": 4.5,
         "description": "A practical guide teaching techniques to break free from negative thought patterns, build mental discipline, and achieve mental clarity through self-awareness exercises.",
-        "cover": "images/"
+        "cover": "images/stop-overthinking.webp"
     },
 
     {
@@ -236,6 +236,6 @@
         "pages": 352,
         "rating": 4.6,
         "description": "World Fantasy Award winner introduces Geralt the Witcher, who uses magic and training to hunt monsters plaguing humanity while discovering not everything monstrous is evil.",
-        "cover": "images/"
+        "cover": "images/the-witcher.webp"
     }
 ]
