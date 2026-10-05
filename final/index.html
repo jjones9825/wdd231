@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Book Nook helps you discover your next great read through curated books, genre browsing, and a personal reading list.">
+    <meta name="author" content="Julie Jones">
+    
+    <!-- Open Graph -->
+     <meta property="og:title" content="The Book Nook | Find Your Next Great Read">
+     <meta property="og:description" content="Discover books worth getting lost in with The Book Nook.">
+     <meta property="og:type" content="website">
+     <meta property="og:image" content="https://jjones9825.github.io/wdd231/final/images/the-book-nook-logo.webp">
+    
+    <link rel="icon" href="images/the-book-nook.ico">
+    <link rel="stylesheet" href="styles/siteplan.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <title>The Book Nook | Find Your Next Great Read </title>
+
+    <!-- CSS -->
+     <link rel="stylesheet" href="styles/base.css">
+     <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+     <script type="module" src="scripts/main.js"></script>
+     <script type="module" src="scripts/home.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a class="site-logo" href="index.html" aria-label="The Book Nook Home">
+                <img src="images/the-book-nook-logo.webp" alt="The Book Nook Logo" width="45" height="45">
+                <span>The Book Nook</span>
+            </a>
+            
+            <button class="menu-button" id="menu-button" type="button" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="primary-nav">
+                <span class="menu-icon">☰</span>
+            </button>
+
+            <nav class="primary-nav" id="primary-nav" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                    <li><a href="books.html">Explore Books</a></li>
+                    <li><a href="reading-list.html">My Reading List</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- HERO -->
+        <seciton class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">
+                    WELCOME TO THE BOOK NOOK
+                </p>
+
+                <h1>Find Your Next Great Read</h1>
+            
+
+                <p class="hero-text">
+                    Discover books worth getting lost in. Browse stories, explore new generes, and create your personal reading list.
+                </p>
+
+                <a class="button button-primary" href="books.html">Explore Books</a>
+            </div>
+
+            <div class="hero-image">
+                <img src="images/book-nook-hero.webp" alt="A cozy reading space with books." width="800" height="600" fetchpriority="high">
+            </div>
+        </seciton>
+
+        <!-- FEATURED BOOKS -->
+        <section class="featured-section" aria-labelledby="featured-heading">
+            <div class="section-heading">
+                <p class="eyebrow">A FEW FAVORITES</p>
+                
+                <h2 id="featured-heading">Featured Reads</h2>
+
+                <p>Start with one of these reader favorites.</p>
+            </div>
+
+            <div class="book-grid featured-grid" id="featured-books" aria-live="polite">
+                <p class="loading-message">Discovering some great reads...</p>
+            </div>
+
+            <div class="section-action">
+                <a class="button button-secondary" href="books.html">Explore All Books</a>
+            </div>
+        </section>
+
+        <!-- GENRES -->
+        <section class="genre-section" aria-labelledby="genre-heading">
+            <div class="section-heading">
+                <p class="eyebrow">
+                    WHAT ARE YOU IN THE MOOD FOR?
+                </p>
+
+                <h2 id="genre-heading">Browse by Genre</h2>
+                
+                <p>Find your next story by choosing a favorite genre.</p>
+            </div>
+            
+            <div class="genre-grid">
+                <a class="genre-card" href="books.html?genre=Fantasy">
+                    <span class="genre-icon" aria-hidden="true">✦</span>
+                    <span>Fantasy</span>
+                </a>
+
+                <a class="genre-card" href="books.html?genre=Mystery">
+                    <span class="genre-icon" aria-hidden="true">?</span>
+                    <span>Mystery</span>
+                </a>
+
+                <a class="genre-card" href="books.html?genre=Romance">
+                    <span class="genre-icon" aria-hidden="true">♡</span>
+                    <span>Romance</span>
+                </a>
+
+                <a class="genre-card" href="books.html?genre=Historical">
+                    <span class="genre-icon" aria-hidden="true">⌛︎</span>
+                    <span>Historical</span>
+                </a>
+
+                <a class="genre-card" href="books.html?genre=Fiction">
+                    <span class="genre-icon" aria-hidden="true">▤</span>
+                    <span>Fiction</span>
+                </a>
+
+                <a class="genre-card" href="books.html?genre=Science Fiction">
+                    <span class="genre-icon" aria-hidden="true">🧪</span>
+                    <span>Science Fiction</span>
+                </a>
+
+                <a class="genre-card" href="books.html?genre=Adventure">
+                    <span class="genre-icon" aria-hidden="true">→</span>
+                    <span>Adventure</span>
+                </a>
+
+                <a class="genre-card" href="books.html?genre=Self Help">
+                    <span class="genre-icon" aria-hidden="true">🧘🏼</span>
+                    <span>Self Help</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Reading List -->
+        <section class="reading-list-preview" aria-labelledby="reading-list-heading">
+            <div class="reading-list-icon" aria-hidden="true">📋</div>
+
+            <div class="reading-list-content">
+                <p class="eyebrow">KEEP TRACK OF YOUR NEXT READ</p>
+
+                <h2 id="reading-list-heading">Your Reading List</h2>
+
+                <p id="reading-list-message">
+                    You currently have <strong id="reading-list-count">0</strong>
+                    books waiting to be read.
+                </p>
+
+                <a class="button button-primary" href="reading-list.html">View My List</a>
+            </div>
+        </section>
+
+        <!-- Reading Inspiration -->
+        <section class="inspiration-section" aria-labelledby="inspiration-heading">
+            <div class="inspiration-content">
+                <p class="eyebrow">
+                    A LITTLE READING INSPIRATION
+                </p>
+
+                <h2 id="inspiration-heading">Make Time for a Good Story</h2>
+
+                <blockquote>"A good book is a dream that you hold in your hands."</blockquote>
+                
+                <p class="quote-author">- Neil Gaiman</p>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a class="site-logo footer-logo" href="index.html" aria-label="The Book Nook Home">
+                    
+                    <img src="images/the-book-nook-logo.webp" alt="The Book Nook logo" width="40" height="40">
+
+                    <span>The Book Nook</span>
+                </a>
+
+                <p>Find your next great read.</p>
+            </div>
+
+            <div class="footer-links">
+                <h2>Explore</h2>
+
+                <a href="index.html">Home</a>
+                <a href="books.html">Explore Books</a>
+                <a href="reading-list.html">My Reading List</a>
+                <a href="attributions.html">Attributions</a>
+            </div>
+
+            <div class="footer-video">
+                <h2>Project Video</h2>
+                <a href="#" target="_blank" rel="noopener">Video Demonstration</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy;
+                <span id="current-year"></span>
+                The Book Nook | Julie Jones
+            </p>
+
+            <p>
+                WDD231 Individual Website Project
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

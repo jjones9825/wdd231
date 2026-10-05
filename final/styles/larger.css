@@ -1,0 +1,129 @@
+@media screen and (min-width: 38rem) {
+    /* ---------- HEADER ---------- */
+    .header-container {
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 0.75rem 1.5rem;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .primary-nav {
+        background-color: transparent;
+        display: block;
+        gap: 0.5rem;
+        padding: 0;
+        position: static;
+        width: auto;
+    }
+
+    .primary-nav ul {
+        align-items: center;
+        display: flex;
+        gap: 0.5rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .primary-nav li {
+        border: none;
+    }
+
+    .primary-nav a {
+        border-bottom: 3px solid transparent;
+        color: var(--espresso);
+        display: block;
+        font-weight: 600;
+        padding: 0.6rem 0.75rem;
+        transition: color var(--transition),
+            border-color var(--transition);
+    }
+
+    .primary-nav a:hover,
+    .primary-nav a:focus {
+        border-bottom-color: var(--rose);
+        color: var(--rose);
+    }
+
+    .primary-nav a.active {
+        border-bottom-color: var(--rose);
+        color: var(--rose);
+    }
+
+    /* ---------- HERO ---------- */
+    .hero {
+        display: grid;
+        gap: 3rem;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+        max-width: 1200px;
+        min-height: 500px;
+        padding: 5rem 1.5rem;
+    }
+
+    .hero-content {
+        align-self: center;
+    }
+
+    .hero-image {
+        align-self: center;
+    }
+
+    .hero-image img {
+        min-height: 400px;
+    }
+
+    /* ---------- FEATURED BOOKS ---------- */
+    .featured-section,
+    .genre-section,
+    .inspiration-section {
+        padding: 5rem 1.5rem;
+    }
+
+    .featured-grid {
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    /* ---------- GENRES ---------- */
+    .genre-grid {
+        gap: 1rem;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0 auto;
+        max-width: 1000px;
+    }
+
+    /* ---------- READING LIST PREVIEW ---------- */
+    .reading-list-preview {
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 4rem 3rem;
+        text-align: left;
+    }
+
+    .reading-list-content {
+        flex: 1;
+    }
+
+    /* ---------- FOOTER ----------- */
+    .footer-container {
+        gap: 3rem;
+        grid-template-columns: 2fr 1fr 1fr;
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 3rem 1.5rem;
+    }
+    
+    .footer-bottom {
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem max(1.5rem, calc((100% - 1200px) / 2));
+    }
+}

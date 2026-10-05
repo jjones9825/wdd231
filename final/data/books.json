@@ -1,0 +1,241 @@
+[
+    {
+        "id": 1,
+        "title": "Dungeon Crawler Carl",
+        "author": "Matt Dinniman",
+        "genre": "Fantasy",
+        "year": 2020,
+        "pages": 464,
+        "rating": 4.8,
+        "description": "Coast Guard vet Carl and his ex-girlfriend's cat Princess Donut, survive an alien invasion by navigating a deadly fantasy dungeon that's actually a sadistic intergalactic reality show.",
+        "cover": "images/"
+    },
+
+    {
+        "id": 2,
+        "title": "The Deal",
+        "author": "Elle Kennedy",
+        "genre": "Romance",
+        "year": 2015,
+        "pages": 400,
+        "rating": 4.5,
+        "description": "A college student tutors the hockey team captain to make another guy jealous, but ends up falling for him instead.",
+        "cover": "images/"
+    },
+
+    {
+        "id": 3,
+        "title": "Shield of Sparrows",
+        "author": "Devney Perry",
+        "genre": "Adventure",
+        "year": 2025,
+        "pages": 528,
+        "rating": 4.6,
+        "description": "A princess defies her destined role when she seals an ancient treaty with blood and embarks on a perilous journey with a hostile warrior.",
+        "cover": "images/"
+    },
+
+    {
+        "id": 4,
+        "title": "Don't Believe Everything You Think",
+        "author": "Joseph Nguyen",
+        "genre": "Self Help",
+        "year": 2022,
+        "pages": 192,
+        "rating": 4.6,
+        "description": "This book teaches how to overcome anxiety, self-doubt, and suffering by understanding the root cause and accessing inner peace and unconditional love.",
+        "cover": "images/"
+    },
+
+    {
+        "id": 5,
+        "title": "Foreign Deceit",
+        "author": "Jeff Carson",
+        "genre": "Mystery",
+        "year": 2014,
+        "pages": 312,
+        "rating": 4.2,
+        "description": "A deputy investigates his brother's suspicious death in Italy, uncovering deadly secrets amid ancient alleys with a distrustful local agent.",
+        "cover": "images/"
+    },
+
+    {
+        "id": 6,
+        "title": "Lusitania Gold",
+        "author": "Fred Rayworth",
+        "genre": "Mystery",
+        "year": 2023,
+        "pages": 372,
+        "rating": 4.2,
+        "description": "Treasure hunter Detach and his crew search for sunken riches in the Lusitania wreck, facing dangerous secrets and mysterious threats lurking in the Atlantic depths.",
+        "cover": "images/"
+    },
+
+    {
+        "id": 7,
+        "title": "The Forgotten 500",
+        "author": "Gregory A. Freeman",
+        "genre": "Historical",
+        "year": 2008,
+        "pages": 336,
+        "rating": 4.6,
+        "description": "In 1944, American airmen shot down over Nazi-occupied Yugoslavia were rescued through Operation Halyard, where Serbian villagers helped build a secret landing string for their evacuation.",
+        "cover": "images/"
+    },
+
+    {
+        "id": 8,
+        "title": "Project Hail Mary",
+        "author": "Andy Weir",
+        "genre": "Science Fiction",
+        "year": 2022,
+        "pages": 497,
+        "rating": 4.7,
+        "description": "An amnesiac astronaut awakens millions of miles from Earth with two dead crewmates. As memories return, he must solve a scientific mystery to save humanity from extinction.",
+        "cover": "images/"
+    },
+
+    {
+        "id": 9,
+        "title": "Dark Matter",
+        "author": "Blake Crouch",
+        "genre": "Fiction",
+        "year": 2017,
+        "pages": 368,
+        "rating": 4.4,
+        "description": "This story follows a physics professor who wakes up in an alternate universe where his life is completely different. To reclaim his family, he must navigate infinite realities while facing his greatest enemy--himself.",
+        "cover": "images/"
+    },
+
+    {
+        "id": 10,
+        "title": "The Ghost Warriors",
+        "author": "Bill Tippins",
+        "genre": "Fiction",
+        "year": 2021,
+        "pages": 208,
+        "rating": 4.7,
+        "description": "A thrilling prehistoric adventure where two young heroes embark on a dangerous quest to rescue their kidnapped friend, only to spark a deadly conflict threatening their entire village.",
+        "cover": "images/"
+    },
+
+    {
+        "id": 11,
+        "title": "Forbidden Summit",
+        "author": "Kirk Pocan",
+        "genre": "Science Fiction",
+        "year": 2026,
+        "pages": 319,
+        "rating": 5.0,
+        "description": "A team of emotionally broken moutaineers attempts to conquer Danvedi Garwal, the galazy's deadliest forbidden summit, facing deadly predators, rival climbers, and a universe-altering secret.",
+        "cover": "images/"
+    },
+
+    {
+        "id": 12,
+        "title": "The Chronicles of Narnia",
+        "author": "C.S. Lewis",
+        "genre": "Adventure",
+        "year": 2001,
+        "pages": 768,
+        "rating": 4.8,
+        "description": "C.S. Lewis's complete seven-book series follows children who become heroes in Narnia, a fantastical realm where they battle evil, encounter mythical creatures, and discover profound moral truths.",
+        "cover": "images/"
+    },
+
+    {
+        "id": 13,
+        "title": "Lions of Medina",
+        "author": "Doyle Glass",
+        "genre": "Historical",
+        "year": 2023,
+        "pages": 448,
+        "rating": 4.6,
+        "description": "A gripping account of a Marine company's harrowing battle for survival against overwhelming North Vietnamese forces in the jungles of Vietnam.",
+        "cover": "images/"
+    },
+
+    {
+        "id": 14,
+        "title": "Get Out of Your Head: Stopping the Spiral of Toxic Thoughts",
+        "author": "Jennie Allen",
+        "genre": "Self Help",
+        "year": 2020,
+        "pages": 256,
+        "rating": 4.7,
+        "description": "This book is about how to escape negative thinking patterns and take control of your thoughts, emotions, and circumstances by submitting your mind to Christ.",
+        "cover": "images/"
+    },
+
+    {
+        "id": 15,
+        "title": "The Love Hypothesis",
+        "author": "Ali Hazelwood",
+        "genre": "Romance",
+        "year": 2021,
+        "pages": 401,
+        "rating": 4.5,
+        "description": "A fake relationship between scientists meets the irresistible force of attraction, throwing one woman;s carefully calculated theories on love into chaos.",
+        "cover": "images/"
+    },
+
+    {
+        "id": 16,
+        "title": "Assassin's Apprentice",
+        "author": "Robin Hobb",
+        "genre": "Fantasy",
+        "year": 2023,
+        "pages": 465,
+        "rating": 4.5,
+        "description": "A young outcast bastard son secretly trained as an assassin must use his magical abilities to protect his kingdom from raiders.",
+        "cover": "images/"
+    },
+
+    {
+        "id": 17,
+        "title": "The Name of the Wind",
+        "author": "Patrick Rothfuss",
+        "genre": "Fantasy",
+        "year": 2009,
+        "pages": 672,
+        "rating": 4.7,
+        "description": "The story of a hero told in his own voice, a tale of sorrow, survival, and one man's search for meaning in his universe, and how that search gave birth to a legend.",
+        "cover": "images/"
+    },
+
+    {
+        "id": 18,
+        "title": "The Wheel of Time",
+        "author": "Robert Jordan",
+        "genre": "Adventure",
+        "year": 1990,
+        "pages": 784,
+        "rating": 4.6,
+        "description": "A young man and his friends are swept into an epic fantasy adventure, pursued by dark forces seeking an ancient prophecy's fulfillment.",
+        "cover": "images/"
+    },
+
+    {
+        "id": 19,
+        "title": "Stop Overthinking",
+        "author": "Olivia Telford",
+        "genre": "Self Help",
+        "year": 2025,
+        "pages": 242,
+        "rating": 4.5,
+        "description": "A practical guide teaching techniques to break free from negative thought patterns, build mental discipline, and achieve mental clarity through self-awareness exercises.",
+        "cover": "images/"
+    },
+
+    {
+        "id": 20,
+        "title": "The Witcher",
+        "author": "Andrzej Sapkowski",
+        "genre": "Fantasy",
+        "year": 2022,
+        "pages": 352,
+        "rating": 4.6,
+        "description": "World Fantasy Award winner introduces Geralt the Witcher, who uses magic and training to hunt monsters plaguing humanity while discovering not everything monstrous is evil.",
+        "cover": "images/"
+    }
+]
