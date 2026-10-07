@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View and manage your saved books on The Book Nook.">
+    <meta name="author" content="Julie Jones">
+    
+    <!-- Open Graph -->
+     <meta property="og:title" content="My Reading List | The Book Nook">
+     <meta property="og:description" content="View and manage your saved books on The Book Nook.">
+     <meta property="og:type" content="website">
+     <meta property="og:image" content="https://jjones9825.github.io/wdd231/final/images/the-book-nook-logo.webp">
+    
+    <link rel="icon" href="images/the-book-nook.ico">
+    <link rel="stylesheet" href="styles/siteplan.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <title>My Reading List | The Book Nook</title>
+
+    <!-- CSS -->
+     <link rel="stylesheet" href="styles/normalize.css">
+     <link rel="stylesheet" href="styles/base.css">
+     <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+     <script type="module" src="scripts/main.js"></script>
+     <script type="module" src="scripts/reading-list.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a class="site-logo" href="index.html" aria-label="The Book Nook Home">
+                <img src="images/the-book-nook-logo.webp" alt="The Book Nook Logo" width="45" height="45">
+                <span>The Book Nook</span>
+            </a>
+            
+            <button class="menu-button" id="menu-button" type="button" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="primary-nav">
+                <span class="menu-icon">☰</span>
+            </button>
+
+            <nav class="primary-nav" id="primary-nav" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="books.html">Explore Books</a></li>
+                    <li><a href="reading-list.html" class="active" aria-current="page">My Reading List</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- PAGE INTRO -->
+        <seciton class="page-intro">
+            
+            <p class="eyebrow">
+                YOUR PERSONAL BOOKSHELF
+            </p>
+
+            <h1>My Reading List</h1>
+        
+
+            <p>
+                Keep track of the books you've discovered and want to read next.
+            </p>
+        
+        </seciton>
+
+        <!-- READING STATISTICS -->
+        <section class="reading-stats" aria-labelledby="reading-stats-heading">
+            <h2 id="reading-stats-heading">
+                Your Reading Stats
+            </h2>
+
+            <div class="stats-grid">
+                <article class="stat-card">
+                    <span class="stat-number" id="total-books">0</span>
+
+                    <h3>Books Saved</h3>
+                </article>
+
+                <article class="stat-card">
+                    <span class="stat-number" id="favorite-genre">-</span>
+                    
+                    <h3>Favorite Genre</h3>
+                </article>
+
+                <article class="stat-card">
+                    <span class="stat-number" id="total-pages">0</span>
+
+                    <h3>Pages to Read</h3>
+                </article>
+            </div>
+        </section>
+
+        <section class="reading-list-section" aria-labelledby="saved-books-heading">
+            <div class="collection-header">
+                <div>
+                    <p class="eyebrow">
+                        YOUR SAVED BOOKS
+                    </p>
+
+                    <h2 id="saved-books-heading">
+                        Ready to Read
+                    </h2>
+                </div>
+
+                <p class="book-count" aria-live="polite">
+                    <strong id="saved-book-count">0</strong> books saved
+                </p>
+            </div>
+
+            <div class="book-grid collection-grid" id="reading-list-grid" aria-live="polite">
+                <p class="loading-message">
+                    Loading your reading list...
+                </p>
+            </div>
+
+            <div class="empty-reading-list" id="empty-reading-list" hidden>
+                <div class="empty-reading-icon">
+                    📚
+                </div>
+                
+                <h2>
+                    Your reading list is waiting
+                </h2>
+
+                <p>
+                    You haven't saved any books yet.
+                    Explore our collection and find something wonderful to read.
+                </p>
+
+                <a class="button button-primary" href="books.html">
+                    Explore Books
+                </a>
+            </div>
+        </section>
+
+        <section class="preferences-section" aria-labelledby="preferences-heading">
+            <div class="preferences-intro">
+                <p class="eyebrow">
+                    FIND YOUR NEXT READ
+                </p>
+
+                <h2 id="preferences-heading">
+                    Tell Us What You Like
+                </h2>
+
+                <p>
+                    Share your reading preferences and
+                    we'll help you find books that match your interests.
+                </p>
+            </div>
+
+            <form class="preferences-form" action="form-action.html" method="get">
+                <div class="form-group">
+                    <label for="favorite-genre-select">
+                        Favorite genre
+                    </label>
+
+                    <select id="favorite-genre-select" name="genre" required>
+                        <option value="">
+                            --Select a genre--
+                        </option>
+
+                        <option value="Fantasy">
+                            Fantasy
+                        </option>
+
+                        <option value="Fiction">
+                            Fiction
+                        </option>
+
+                        <option value="Mystery">
+                            Mystery
+                        </option>
+
+                        <option value="Romance">
+                            Romance
+                        </option>
+
+                        <option value="Historical">
+                            Historical
+                        </option>
+
+                        <option value="Science Fiction">
+                            Science Fiction
+                        </option>
+
+                        <option value="Adventure">
+                            Adventure
+                        </option>
+
+                        <option value="Self Help">
+                            Self Help
+                        </option>
+                    </select>
+                </div>
+
+                <fieldset>
+                    <legend>
+                        Preferred book length
+                    </legend>
+
+                    <label>
+                        <input type="radio" name="length" value="short" required>
+                        Short <span class="form-hint">
+                            Under 250 Pages
+                        </span>
+                    </label>
+
+                    <label>
+                        <input type="radio" name="length" value="medium">
+                        Medium <span class="form-hint">
+                            250-400 pages
+                        </span> 
+                    </label>
+
+                    <label>
+                        <input type="radio" name="length" value="long">
+                        Long <span class="form-hint">
+                            Over 400 pages
+                        </span>
+                    </label>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="reading-frequency">
+                        How often do you read?
+                    </label>
+
+                    <select id="reading-frequency" name="frequency" required>
+                        <option value="">
+                            --Select One--
+                        </option>
+
+                        <option value="daily">
+                            Every day
+                        </option>
+
+                        <option value="weekly">
+                            Several times a week
+                        </option>
+
+                        <option value="occasionally">
+                            Occasionally
+                        </option>
+
+                        <option value="rarely">
+                            When I have time
+                        </option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="reading-goal">
+                        What is your reading goal?
+                    </label>
+
+                    <input type="text" id="reading-goal" name="goal" placeholder="Example: Read 12 books this year" maxlength="100">
+                </div>
+
+                <button type="submit" class="button button-primary">
+                    Find My Recommendations
+                </button>
+            </form>
+        </section>
+
+        <dialog class="book-modal" id="book-modal" aria-labelledby="modal-title">
+        <div class="modal-content">
+            <button id="modal-close" class="modal-close" aria-label="Close book details">
+                x
+            </button>
+            <div class="modal-book">
+                <div class="modal-image-container">
+                    <img id="modal-cover" src="" alt="" width="300" height="450">
+                </div>
+
+                <div class="modal-details">
+                    <p class="book-genre" id="modal-genre"></p>
+
+                    <h2 id="modal-title"></h2>
+
+                    <p class="modal-author" id="modal-author"></p>
+
+                    <div class="modal-meta">
+                        <span>
+                            <strong>Published:</strong>
+                            <span id="modal-year"></span>
+                        </span>
+
+                        <span>
+                            <strong>Pages:</strong>
+                            <span id="modal-pages"></span>
+                        </span>
+
+                        <span>
+                            <strong>Rating:</strong>
+                            <span id="modal-rating"></span>
+                        </span>
+                    </div>
+
+                    <p class="modal-description" id="modal-description"></p>
+
+                    <button type="button" class="button button-primary" id="modal-save">
+                        Remove from Reading List
+                    </button>
+                </div>
+            </div>
+        </div>
+    </dialog>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a class="site-logo footer-logo" href="index.html" aria-label="The Book Nook Home">
+                    
+                    <img src="images/the-book-nook-logo.webp" alt="The Book Nook logo" width="40" height="40">
+
+                    <span>The Book Nook</span>
+                </a>
+
+                <p>Find your next great read.</p>
+            </div>
+
+            <div class="footer-links">
+                <h2>Explore</h2>
+
+                <a href="index.html">Home</a>
+                <a href="books.html">Explore Books</a>
+                <a href="reading-list.html">My Reading List</a>
+                <a href="attributions.html">Attributions</a>
+            </div>
+
+            <div class="footer-video">
+                <h2>Project Video</h2>
+                <a href="#" target="_blank" rel="noopener">Video Demonstration</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy;
+                <span id="current-year"></span>
+                The Book Nook | Julie Jones
+            </p>
+
+            <p>
+                WDD231 Individual Website Project
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

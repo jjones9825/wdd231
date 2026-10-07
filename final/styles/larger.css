@@ -111,6 +111,118 @@
         flex: 1;
     }
 
+    /* ---------- PAGE INTRO ---------- */
+    .page-intro {
+        padding: 4rem 2rem 3rem;
+    }
+
+    .page-intro h1 {
+        font-size: 2.75rem;
+    }
+
+    /* ---------- SEARCH / FILTER CONTROLS ---------- */
+    .book-controls {
+        align-items: end;
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: 1.5fr 2fr 0.75fr;
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 1.5rem 2rem;
+    }
+
+    .search-container,
+    .filter-container,
+    .sort-container {
+        min-width: 0;
+    }
+
+    .filter-container {
+        align-self: end;
+    }
+
+    .sort-container {
+        min-width: 150px;
+    }
+
+    /* ---------- COLLECTION ---------- */
+    .collection-section {
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 4rem 2rem 5rem;
+    }
+
+    .collection-header {
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .collection-grid {
+        gap: 1.5rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .collection-grid .book-card-content {
+        padding: 1rem;
+    }
+
+    .collection-grid .book-card h3 {
+        font-size: 1.2rem;
+    }
+
+    /* ---------- MODAL ----------- */
+    .modal-content {
+        padding: 2rem;
+    }
+
+    .modal-book {
+        align-items: start;
+        grid-template-columns: 260px 1fr;
+        gap: 2rem;
+    }
+
+    .modal-image-container img {
+        max-height: 400px;
+    }
+
+    /* ---------- READING LIST ---------- */
+   .reading-stats {
+    padding: 3rem 2rem 4rem;
+   }
+
+   .stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+   }
+
+   .stat-card {
+    padding: 2rem 1.5rem;
+   }
+
+   .reading-list-section {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 4rem 2rem 5rem;
+   }
+
+   #reading-list-grid {
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+   }
+
+   .preferences-section {
+    padding: 4rem 2rem 5rem;
+   }
+
+   .preferences-form {
+    padding: 2rem;
+   }
+
+   .preferences-form .button {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+   }
     /* ---------- FOOTER ----------- */
     .footer-container {
         gap: 3rem;

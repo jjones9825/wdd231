@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore The Book Nook's collection of books. Search, filter and discover your next great read by genre, author, and title.">
+    <meta name="author" content="Julie Jones">
+    
+    <!-- Open Graph -->
+     <meta property="og:title" content="Explore Books | The Book Nook">
+     <meta property="og:description" content="Search and explore The Book Nook's collection to find your next great read.">
+     <meta property="og:type" content="website">
+     <meta property="og:image" content="https://jjones9825.github.io/wdd231/final/images/the-book-nook-logo.webp">
+    
+    <link rel="icon" href="images/the-book-nook.ico">
+    <link rel="stylesheet" href="styles/siteplan.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <title>Explore Books | The Book Nook</title>
+
+    <!-- CSS -->
+     <link rel="stylesheet" href="styles/normalize.css">
+     <link rel="stylesheet" href="styles/base.css">
+     <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+     <script type="module" src="scripts/main.js"></script>
+     <script type="module" src="scripts/books.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a class="site-logo" href="index.html" aria-label="The Book Nook Home">
+                <img src="images/the-book-nook-logo.webp" alt="The Book Nook Logo" width="45" height="45">
+                <span>The Book Nook</span>
+            </a>
+            
+            <button class="menu-button" id="menu-button" type="button" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="primary-nav">
+                <span class="menu-icon">☰</span>
+            </button>
+
+            <nav class="primary-nav" id="primary-nav" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="books.html" class="active" aria-current="page">Explore Books</a></li>
+                    <li><a href="reading-list.html">My Reading List</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- PAGE INTRO -->
+        <seciton class="page-intro">
+            
+                <p class="eyebrow">
+                    DISCOVER SOMETHING NEW
+                </p>
+
+                <h1>Explore the Collections</h1>
+            
+
+                <p>
+                    Find a book that fits your mood, your interests, or your next reading adventure
+                </p>
+
+        </seciton>
+
+        <!-- BOOK CONTROLS -->
+        <section class="book-controls" aria-label="Book search and filters">
+            <div class="search-container">
+                <label for="book-search">
+                    Search books
+                </label>
+                
+                <div class="search-box">
+                    <input type="search" id="book-search" name="book-search" placeholder="Search by title or author..." autocomplete="off">
+
+                    <button type="button" id="clear-search" class="clear-search" aria-label="Clear search">
+                        x
+                    </button>
+                </div>
+            </div>
+            
+            <div class="filter-container">
+                <h2>Browse by Genre</h2>
+
+                <div class="genre-filters" id="genre-filters" role="group" aria-label="Filter books by genre">
+                    <button type="button" class="filter-button active" data-genre="All" aria-pressed="true">All</button>
+
+                    <button type="button" class="filter-button" data-genre="Fantasy" aria-pressed="false">Fantasy</button>
+
+                    <button type="button" class="filter-button" data-genre="Mystery" aria-pressed="false">Mystery</button>
+
+                    <button type="button" class="filter-button" data-genre="Romance" aria-pressed="false">Romance</button>
+
+                    <button type="button" class="filter-button" data-genre="Historical" aria-pressed="false">Historical</button>
+
+                    <button type="button" class="filter-button" data-genre="Fiction" aria-pressed="false">Fiction</button>
+
+                    <button type="button" class="filter-button" data-genre="Science Fiction" aria-pressed="false">Science Fiction</button>
+
+                    <button type="button" class="filter-button" data-genre="Adventure" aria-pressed="false">Adventure</button>
+
+                    <button type="button" class="filter-button" data-genre="Self Help" aria-pressed="false">Self Help</button>
+                </div>
+            </div>
+
+            <div class="sort-container">
+                <label for="sort-books">
+                    Sort by
+                </label>
+
+                <select id="sort-books" name="sort-books">
+                    <option value="title">
+                        Title
+                    </option>
+
+                    <option value="author">
+                        Author
+                    </option>
+
+                    <option value="year">
+                        Publication Year
+                    </option>
+
+                    <option value="rating">
+                        Rating
+                    </option>
+                </select>
+            </div>
+        </section>
+
+        <!-- Results -->
+        <section class="collection-section" aria-labelledby="collection-heading">
+            <div class="collection-header">
+                <div>
+                    <p class="eyebrow">
+                        THE BOOK NOOK COLLECTION
+                    </p>
+
+                    <h2 id="collection-heading">Books</h2>
+                </div>
+
+                <p class="book-count" aria-live="polite">
+                    Showing <strong id="book-count">0</strong> books
+                </p>
+                
+            </div>
+            
+            <div class="book-grid collection-grid" id="book-grid" aria-live="polite">
+                <p class="loading-message">
+                    Discovering some great reads...
+                </p>
+            </div>
+
+            <div class="no-results" id="no-results" hidden>
+                <h2>No books found</h2>
+                <p>Try changing your search or selecting another genre.</p>
+                <button type="button" class="button button-secondary" id="reset-filters">Reset Filters</button>
+            </div>
+        </section>
+
+        <!-- BOOK DETAILS MODAL -->
+        <dialog class="book-modal" id="book-modal" aria-labelledby="modal-title">
+            <div class="modal-content">
+                <button type="button" class="modal-close" id="modal-close" aria-label="Close book details">
+                    x
+                </button>
+
+                <div class="modal-book">
+                    <div class="modal-image-container">
+                        <img id="modal-cover" src="" alt="" width="300" height="450">
+                    </div>
+
+                    <div class="modal-details">
+                        <p class="book-genre" id="modal-genre">  
+                        </p>
+
+                        <h2 id="modal-title"></h2>
+
+                        <p class="modal-author" id="modal-author"></p>
+
+                        <div class="modal-meta">
+                            <span>
+                                <strong>Published:</strong>
+                                <span id="modal-year"></span>
+                            </span>
+
+                            <span>
+                                <strong>Pages:</strong>
+                                <span id="modal-pages"></span>
+                            </span>
+
+                            <span>
+                                <strong>Rating:</strong>
+                                <span id="modal-rating"></span>
+                            </span>
+                        </div>
+
+                        <p class="modal-description" id="modal-description"></p>
+
+                        <button type="button" class="button button-primary" id="modal-save">Save to Reading List</button>
+                    </div>
+                </div>
+            </div>
+        </dialog>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a class="site-logo footer-logo" href="index.html" aria-label="The Book Nook Home">
+                    
+                    <img src="images/the-book-nook-logo.webp" alt="The Book Nook logo" width="40" height="40">
+
+                    <span>The Book Nook</span>
+                </a>
+
+                <p>Find your next great read.</p>
+            </div>
+
+            <div class="footer-links">
+                <h2>Explore</h2>
+
+                <a href="index.html">Home</a>
+                <a href="books.html">Explore Books</a>
+                <a href="reading-list.html">My Reading List</a>
+                <a href="attributions.html">Attributions</a>
+            </div>
+
+            <div class="footer-video">
+                <h2>Project Video</h2>
+                <a href="#" target="_blank" rel="noopener">Video Demonstration</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy;
+                <span id="current-year"></span>
+                The Book Nook | Julie Jones
+            </p>
+
+            <p>
+                WDD231 Individual Website Project
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
