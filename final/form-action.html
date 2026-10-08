@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Review your submitted reading preferences at The Book Nook and continue discovering your next favorite book.">
+    <meta name="author" content="Julie Jones">
+    
+    <!-- Open Graph -->
+     <meta property="og:title" content="Reading Preferences Submitted | The Book Nook">
+     <meta property="og:description" content="Your reading preferences have been received at The Book Nook.">
+     <meta property="og:type" content="website">
+     <meta property="og:image" content="https://jjones9825.github.io/wdd231/final/images/the-book-nook-logo.webp">
+    
+    <link rel="icon" href="images/the-book-nook.ico">
+    <link rel="stylesheet" href="styles/siteplan.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <title>Reading Preferences Submitted | The Book Nook</title>
+
+    <!-- CSS -->
+     <link rel="stylesheet" href="styles/normalize.css">
+     <link rel="stylesheet" href="styles/base.css">
+     <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+     <script type="module" src="scripts/main.js"></script>
+     <script type="module" src="scripts/form-action.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a class="site-logo" href="index.html" aria-label="The Book Nook Home">
+                <img src="images/the-book-nook-logo.webp" alt="The Book Nook Logo" width="45" height="45">
+                <span>The Book Nook</span>
+            </a>
+            
+            <button class="menu-button" id="menu-button" type="button" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="primary-nav">
+                <span class="menu-icon">☰</span>
+            </button>
+
+            <nav class="primary-nav" id="primary-nav" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="books.html">Explore Books</a></li>
+                    <li><a href="reading-list.html">My Reading List</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- PAGE INTRO -->
+        <section class="page-intro">
+            
+            <p class="eyebrow">
+                YOUR READING JOURNEY
+            </p>
+
+            <h1>Reading Preferences Submitted!</h1>
+        
+
+            <p>
+                Every great reading journey begins with discovering what you love.
+            </p>
+        
+        </section>
+
+        <!-- READING STATISTICS -->
+        <section class="confirmation-section" aria-labelledby="confirmation-heading">
+
+            <div class="confirmation-card">
+                <div class="confirmation-icon" aria-hidden="true">✔</div>
+                    <h2 id="confirmation-heading">Thank You for Sharing!</h2>
+
+                    <p>
+                        Your reading preferences have been received.
+                        Here's a summary of your selections.
+                    </p>
+
+                    <div class="preferences-summary" id="preferences-summary">
+                        <p class="loading-message">Loading your preferences...</p>
+                    </div>
+
+                    <div class="confirmation-actions">
+                        <a href="books.html" class="button button-primary">
+                            Explore More Books
+                        </a>
+
+                        <a href="reading-list.html" class="button button-secondary">
+                            Back to My Reading List
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a class="site-logo footer-logo" href="index.html" aria-label="The Book Nook Home">
+                    
+                    <img src="images/the-book-nook-logo.webp" alt="The Book Nook logo" width="40" height="40">
+
+                    <span>The Book Nook</span>
+                </a>
+
+                <p>Find your next great read.</p>
+            </div>
+
+            <div class="footer-links">
+                <h2>Explore</h2>
+
+                <a href="index.html">Home</a>
+                <a href="books.html">Explore Books</a>
+                <a href="reading-list.html">My Reading List</a>
+                <a href="attributions.html">Attributions</a>
+            </div>
+
+            <div class="footer-video">
+                <h2>Project Video</h2>
+                <a href="#" target="_blank" rel="noopener">Video Demonstration</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy;
+                <span id="current-year"></span>
+                The Book Nook | Julie Jones
+            </p>
+
+            <p>
+                WDD231 Individual Website Project
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

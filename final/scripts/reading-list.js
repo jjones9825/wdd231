@@ -96,7 +96,11 @@ function createBookCard(book) {
 
                 <p class="book-author">${book.author}</p>
 
-                <p class="Book-rating">★ ${book.rating}</p>
+                <p class="book-rating">★ ${book.rating}</p>
+                
+                <button type="button" class="button button-secondary details-button" data-id="${book.id}">
+                    View Details
+                </button>
 
                 <button type="button" class="button remove-button" data-id="${book.id}" aria-label="Remove ${book.title} from your reading list">
                     Remove from List
@@ -215,7 +219,7 @@ function updateModalSaveButton() {
 
 function closeBookModal() {
     if (bookModal) {
-        bookModal.closest();
+        bookModal.close();
     }
 
     currentBook = null;

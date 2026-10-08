@@ -1,3 +1,7 @@
+import {
+    getReadingList
+} from "./modules/storage.js";
+
 // ELEMENTS
 
 const featuredBooksContainer = document.querySelector("#featured-books");
@@ -83,21 +87,21 @@ function displayReadingListCount() {
 
     const savedBooks = getReadingList();
 
-    readingListCountCount.textContent = savedBooks.length;
+    readingListCount.textContent = savedBooks.length;
 }
 
-function getReadingList() {
-    try {
-        const savedBooks = localStorage.getItem("bookNookReadingList");
+// function getReadingList() {
+//     try {
+//         const savedBooks = localStorage.getItem("bookNookReadingList");
 
-        return savedBooks ? JSON.parse(savedBooks) : [];
-    }
+//         return savedBooks ? JSON.parse(savedBooks) : [];
+//     }
 
-    catch(error) {
-        console.error("Unable to read the reading list:", error);
-        return [];
-    }
-}
+//     catch(error) {
+//         console.error("Unable to read the reading list:", error);
+//         return [];
+//     }
+// }
 
 getBooks();
 

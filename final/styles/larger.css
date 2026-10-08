@@ -223,6 +223,29 @@
     margin-right: auto;
     width: auto;
    }
+
+   /* ---------- FORM CONFIRMATION PAGE ---------- */
+   .confirmation-section {
+    padding: 4rem 2rem 5rem;
+   }
+
+   .confirmation-card {
+    padding: 3rem;
+   }
+
+   .preference-item {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+   }
+
+   .confirmation-actions {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+   }
+
     /* ---------- FOOTER ----------- */
     .footer-container {
         gap: 3rem;
@@ -237,5 +260,14 @@
         flex-direction: row;
         justify-content: space-between;
         padding: 1rem max(1.5rem, calc((100% - 1200px) / 2));
+    }
+
+    /* ---------- ATTRIBUTIONS PAGE ----------- */
+    .attributions-section {
+        padding: 4rem 2rem 5rem;
+    }
+
+    .attribution-card {
+        padding: 2rem 2.5rem;
     }
 }
