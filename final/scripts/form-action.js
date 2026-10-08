@@ -25,7 +25,7 @@ function displayPreferences() {
         {label: "Favorite Genre ", value: genre},
         {label: "Preferred Book Length ", value: length},
         {label: "Reading Frequency ", value: frequency},
-        {label: "Reading Goal ", value: goal ? `${goal}` : null}
+        {label: "Reading Goal ", value: goal}
     ];
 
     preferencesSummary.replaceChildren();

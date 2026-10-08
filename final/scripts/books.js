@@ -29,8 +29,6 @@ let books = [];
 let filteredBooks = [];
 let currentBook = null;
 
-const readingListKey = "bookNookReadingList";
-
 async function getBooks() {
     try {
         const response = await fetch("data/books.json");
@@ -191,9 +189,7 @@ function addBookCardListeners() {
 function searchBooks() {
     const searchTerm = bookSearch.value.trim().toLowerCase();
 
-    const activeButton = document.querySelector(".filter-button.active") ?.dataset.genre || "All";
-
-    const activeGenre = activeButton?.dataset.genre || "All";
+    const activeGenre = document.querySelector(".filter-button.active")?.dataset.genre || "All";
     
     filteredBooks = books.filter((book) => {
         const matchesSearch = book.title.toLowerCase().includes(searchTerm) || book.author.toLowerCase().includes(searchTerm);
@@ -319,48 +315,6 @@ function updateModalSaveButton() {
         modalSave.textContent = "Save to Reading List";
     }
 }
-
-// function getReadingList() {
-//     try {
-//         const savedBooks = localStorage.getItem(readingListKey);
-
-//         return savedBooks ? JSON.parse(savedBooks) : [];
-//     }
-
-//     catch(error) {
-//         console.error("Unable to read reading list:", error);
-
-//         return[];
-//     }
-// }
-
-// function isBookSaved(bookId) {
-//     const readingList = getReadingList();
-
-//     return readingList.some((id) => String(id) === String(bookId));
-// }
-
-// function toggleReadingList(bookId) {
-//     let readingList = getReadingList();
-
-//     const existingIndex = readingList.findIndex((id) => String(id) === String(bookId));
-    
-//     if (existingIndex === -1) {
-//         readingList.push(bookId);
-//     }
-
-//     else {
-//         readingList.splice(existingIndex, 1);
-//     }
-
-//     localStorage.setItem(readingListKey, JSON.stringify(readingList));
-
-//     displayBooks();
-
-//     if (currentBook) {
-//         updateModalSaveButton();
-//     }
-// }
 
 function checkURLParameters() {
     const params = new URLSearchParams(window.location.search);

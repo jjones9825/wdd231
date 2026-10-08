@@ -239,7 +239,7 @@ if (modalSave) {
 
         loadReadingList();
         
-        updateModalSaveButton();
+        closeBookModal();
     });
 }
 
