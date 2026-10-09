@@ -44,13 +44,13 @@
 
     .primary-nav a:hover,
     .primary-nav a:focus {
-        border-bottom-color: var(--rose);
-        color: var(--rose);
+        border-bottom-color: var(--rose-dark);
+        color: var(--rose-dark);
     }
 
     .primary-nav a.active {
-        border-bottom-color: var(--rose);
-        color: var(--rose);
+        border-bottom-color: var(--rose-dark);
+        color: var(--rose-dark);
     }
 
     /* ---------- HERO ---------- */
